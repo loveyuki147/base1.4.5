@@ -26,7 +26,7 @@ if (!file_exists('base_conf.php') || filesize('base_conf.php') < 10){
 	header( 'Location: setup/index.php' );
 	die();
 }
-
+$BASE_path=/var/www/html/base;
 require("base_conf.php");
 include("$BASE_path/includes/base_include.inc.php");
 include_once("$BASE_path/base_db_common.php");
